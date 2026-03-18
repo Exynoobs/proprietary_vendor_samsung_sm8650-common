@@ -26677,6 +26677,19 @@ android_app_import {
     soc_specific: true,
 }
 
+android_app_import {
+    name: "EuiccGoogle",
+    owner: "samsung",
+    apk: "proprietary/product/priv-app/EuiccGoogle/EuiccGoogle.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
 dex_import {
     name: "uimservicelibrary",
     owner: "samsung",
