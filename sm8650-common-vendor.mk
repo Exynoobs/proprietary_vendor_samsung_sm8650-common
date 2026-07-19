@@ -628,7 +628,6 @@ PRODUCT_PACKAGES += \
     libdsmanager \
     libdsutils \
     libdualcam_refocus_video \
-    libegis_fp_normal_sensor_test \
     libengine_did \
     libengmode_client \
     libese-grdg \
@@ -649,7 +648,6 @@ PRODUCT_PACKAGES += \
     libgame_enhance \
     libgaya \
     libgeofencing \
-    libgf_in_system_lib \
     libgnss \
     libgnsspps \
     libgps.utils \
@@ -834,7 +832,6 @@ PRODUCT_PACKAGES += \
     libsamsungcamerahalutils \
     libsamsungcamerahwl_impl \
     libsavscmn \
-    libsavsvc \
     libscaler_hw.unifunc \
     libscaler_sw.unifunc \
     libscenedetector.uniplugin@1.0 \
@@ -916,7 +913,6 @@ PRODUCT_PACKAGES += \
     libstagefright_foundation_vendor \
     libsubsystem_control \
     libswregistrationalgo \
-    libsynaFpSensorTestNwd \
     libsynergy_loc_api \
     libsynx \
     libsys_info_cache \

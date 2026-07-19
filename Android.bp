@@ -13753,29 +13753,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libegis_fp_normal_sensor_test",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libengine_did",
     owner: "samsung",
     strip: {
@@ -14170,6 +14147,7 @@ cc_prebuilt_library_shared {
                 "libsavscmn",
                 "liblog",
                 "libc",
+                "libdl",
             ],
         },
     },
@@ -14311,32 +14289,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libloc_core",
                 "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgf_in_system_lib",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgf_in_system_lib.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libc++",
-                "liblog",
                 "libc",
                 "libm",
                 "libdl",
@@ -19934,33 +19886,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsavsvc",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsavsvc.so",
-            ],
-            shared_libs: [
-                "libm",
-                "libz",
-                "libsavscmn",
-                "liblog",
-                "libc++",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libscaler_hw.unifunc",
     owner: "samsung",
     strip: {
@@ -20499,16 +20424,12 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsec_esek.so",
             ],
             shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
                 "libspictrl",
                 "libsec_semHalTlc",
                 "libsec_semRil",
-                "libc++",
+                "liblog",
                 "libc",
                 "libm",
-                "libdl",
             ],
         },
     },
@@ -20846,8 +20767,6 @@ cc_prebuilt_library_shared {
                 "libsrib_humanaware_engine.camera.samsung",
                 "libsrib_CNNInterface.camera.samsung",
                 "libHumanSegVideoModel_Vendor",
-                "libHpr_RecFace_dl_v1.0.camera.samsung",
-                "libFace_Landmark_Engine.camera.samsung",
                 "libc++",
                 "libc",
                 "libm",
@@ -21041,6 +20960,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsfp_sensor.so",
             ],
             shared_libs: [
+                "libqfp_sensortest",
                 "libbase",
                 "libcutils",
                 "libutils",
@@ -21050,10 +20970,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.biometrics.fingerprint-V3-ndk",
                 "android.hardware.biometrics.common-V3-ndk",
                 "vendor.samsung.hardware.biometrics.fingerprint-V1-ndk",
-                "libsynaFpSensorTestNwd",
-                "libegis_fp_normal_sensor_test",
-                "libgf_in_system_lib",
-                "libqfp_sensortest",
                 "liblog",
                 "libcrypto",
                 "libc++",
@@ -22356,29 +22272,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsynaFpSensorTestNwd",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsynaFpSensorTestNwd.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdl",
-                "libc",
             ],
         },
     },
