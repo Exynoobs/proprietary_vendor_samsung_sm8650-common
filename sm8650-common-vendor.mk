@@ -846,7 +846,7 @@ PRODUCT_PACKAGES += \
     libsdmextension \
     libsdsprpc \
     libsdynatm \
-    libsec-ril \
+    libsec-ril-impl \
     libsec2imageformatfilter \
     libsec_esek \
     libsec_semHalTlc \
