@@ -36,7 +36,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/aip/model/mfisp_tmodel_nl_Tetra_RGB_fp16.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/aip/model/mfisp_tmodel_nl_Tetra_RGB_fp16.dlc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/audio_effects_haptic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_haptic.xml \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/audio_effects_spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_spatializer.xml \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/audio_policy_configuration_base.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_base.xml \
@@ -999,7 +998,6 @@ PRODUCT_PACKAGES += \
     libaudiosaplus_sec \
     libmyspace \
     libquasar \
-    libsamsungSoundbooster_plus \
     libshoebox \
     libswdap \
     libswspatializer \
