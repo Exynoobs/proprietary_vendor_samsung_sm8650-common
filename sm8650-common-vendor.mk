@@ -975,7 +975,6 @@ PRODUCT_PACKAGES += \
     libaudiosaplus_sec \
     libmyspace \
     libquasar \
-    libsamsungSoundbooster_plus \
     libshoebox \
     libswdap \
     libswspatializer \
