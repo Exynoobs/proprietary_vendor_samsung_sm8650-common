@@ -59,6 +59,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    vendor/samsung/sm8650-common/proprietary/vendor/etc/hdr_samsung_mx.key:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_samsung_mx.key \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/hqm_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hqm_device.xml \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.rc \
@@ -660,6 +661,7 @@ PRODUCT_PACKAGES += \
     libhandgesture.arcsoft \
     libhdr10plus \
     libhdr_backlight_adapter \
+    libhdr_backlight_adapter_qti \
     libhdr_stub \
     libhdr_tm \
     libhdradaptivecustom \

@@ -14607,6 +14607,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhdr_backlight_adapter_qti",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhdr_backlight_adapter_qti.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libtinyxml2_1",
+                "libcutils",
+                "libutils",
+                "libdisplaydebug",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libhdr_stub",
     owner: "samsung",
     strip: {
