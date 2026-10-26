@@ -954,7 +954,6 @@ PRODUCT_PACKAGES += \
     libvideotxr \
     libvkmanager_vendor \
     libvmfilexfer \
-    libvmmem \
     libvui_dmgr \
     libvui_dmgr_client \
     libwifiobserver \
