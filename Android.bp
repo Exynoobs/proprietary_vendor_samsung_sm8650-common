@@ -19671,51 +19671,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libril_sem",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libril_sem.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "android.hardware.radio.config-V2-ndk",
-                "android.hardware.radio.data-V2-ndk",
-                "android.hardware.radio.messaging-V2-ndk",
-                "android.hardware.radio.modem-V2-ndk",
-                "android.hardware.radio.network-V2-ndk",
-                "android.hardware.radio.sap-V1-ndk",
-                "android.hardware.radio.sim-V2-ndk",
-                "android.hardware.radio.voice-V2-ndk",
-                "vendor.samsung.hardware.radio.bridge-V1-ndk",
-                "vendor.samsung.hardware.radio.data-V1-ndk",
-                "vendor.samsung.hardware.radio.messaging-V1-ndk",
-                "vendor.samsung.hardware.radio.network-V1-ndk",
-                "vendor.samsung.hardware.radio.sim-V1-ndk",
-                "libcutils",
-                "libhardware_legacy",
-                "liblog",
-                "librilutils",
-                "libutils",
-                "libfloatingfeature",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "librmengine_plus.uniplugin@1.0",
     owner: "samsung",
     strip: {
@@ -20356,7 +20311,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libril_sem",
+                "libril-samsung",
                 "libnetutils",
                 "libsqlite",
                 "libhardware_legacy",
@@ -26334,32 +26289,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.radio.bridge-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "vendor.samsung.hardware.radio-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.samsung.hardware.radio.channel-V1-ndk",
     owner: "samsung",
     strip: {
@@ -26369,84 +26298,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "vendor.samsung.hardware.radio-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.radio.data-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "vendor.samsung.hardware.radio-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.radio.messaging-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "vendor.samsung.hardware.radio-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.radio.sim-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -26802,24 +26653,6 @@ prebuilt_etc_xml {
     name: "vendor.samsung.hardware.camera.provider-service.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.camera.provider-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.samsung.hardware.radio_manifest_2_34.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_34.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.samsung.hardware.sehradio_manifest_2_34.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_34.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -27362,34 +27195,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "rild",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/rild",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libril_sem",
                 "libc++",
                 "libc",
                 "libm",

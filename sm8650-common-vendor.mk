@@ -109,7 +109,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.samsung.hardware.thermal-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.thermal-default.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.qcom.rc \
-    vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/wifi_qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_qcom.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/wifi_sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_sec.rc \
@@ -828,7 +827,6 @@ PRODUCT_PACKAGES += \
     librechdr10plus.sec \
     librechdr10plus \
     librecordalive \
-    libril_sem \
     librmengine_plus.uniplugin@1.0 \
     librpmb \
     libsamsungcamerahal \
@@ -1057,11 +1055,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.keymint-V3-ndk \
     vendor.samsung.hardware.media.mpp-V5-ndk \
     vendor.samsung.hardware.radio-V1-ndk \
-    vendor.samsung.hardware.radio.bridge-V1-ndk \
     vendor.samsung.hardware.radio.channel-V1-ndk \
-    vendor.samsung.hardware.radio.data-V1-ndk \
-    vendor.samsung.hardware.radio.messaging-V1-ndk \
-    vendor.samsung.hardware.radio.sim-V1-ndk \
     vendor.samsung.hardware.security.drk-V1-ndk \
     vendor.samsung.hardware.security.drk@2.0 \
     vendor.samsung.hardware.security.hermes-V1-ndk \
@@ -1088,8 +1082,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.trustedui-aidl-service.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.samsung.hardware.camera.provider-service.xml \
-    vendor.samsung.hardware.radio_manifest_2_34.xml \
-    vendor.samsung.hardware.sehradio_manifest_2_34.xml \
     vendor.samsung.hardware.thermal-default.xml \
     ATFWD-daemon \
     adpl \
@@ -1107,7 +1099,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti \
     android.hardware.security.keymint-service-spu-qti \
     macloader \
-    rild \
     samsung.software.media.c2@1.0-service \
     secaudiohalaidl \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
