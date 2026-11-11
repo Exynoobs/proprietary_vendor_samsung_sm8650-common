@@ -389,6 +389,7 @@ PRODUCT_PACKAGES += \
     libVkLayer_ADRENO_qprofiler \
     libq3dtools_adreno \
     libq3dtools_esx \
+    android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
@@ -839,7 +840,6 @@ PRODUCT_PACKAGES += \
     libsecsettingsmanager \
     libsegmentationeffect.uniplugin@1.0 \
     libsegmentationeffect_capture.uniplugin@1.0 \
-    libsehbluetooth_audio_session_aidl \
     libsemnativecarrierfeature \
     libsensorlistener \
     libsensorndkbridge \
@@ -1020,7 +1020,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.audio-V1-ndk \
     vendor.samsung.hardware.audio@1.0 \
     vendor.samsung.hardware.biometrics.fingerprint-V1-ndk \
-    vendor.samsung.hardware.bluetooth.audio-V2-ndk \
     vendor.samsung.hardware.bluetooth@2.0 \
     vendor.samsung.hardware.camera.device-V1-ndk \
     vendor.samsung.hardware.camera.provider-V1-ndk \
