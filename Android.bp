@@ -10638,10 +10638,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/lib_SoundAlive_3DPosition_ver202.so",
             ],
             shared_libs: [
+                "liblog",
                 "libc",
                 "libm",
                 "libdl",
-                "liblog",
             ],
         },
     },
@@ -10662,10 +10662,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so",
             ],
             shared_libs: [
+                "liblog",
                 "libc",
                 "libm",
                 "libdl",
-                "liblog",
             ],
         },
     },
@@ -23070,7 +23070,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "nfc_nci_nxpsn",
+    name: "nfc_nci_nxpsn_ecp",
     owner: "samsung",
     strip: {
         none: true,
@@ -23078,7 +23078,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/nfc_nci_nxpsn.so",
+                "proprietary/vendor/lib64/nfc_nci_nxpsn_ecp.so",
             ],
             shared_libs: [
                 "android.hardware.nfc@1.0",
@@ -25434,6 +25434,8 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder_ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "android.hardware.common-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",

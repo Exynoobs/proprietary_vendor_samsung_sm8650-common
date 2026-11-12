@@ -936,7 +936,7 @@ PRODUCT_PACKAGES += \
     libxtadapter \
     libzoomroi.samsung \
     libzoomroi_lite.samsung \
-    nfc_nci_nxpsn \
+    nfc_nci_nxpsn_ecp \
     qti.video.utils.videobufferlayout \
     libSnpeHtpV75Skel \
     libapn_dsp_skel \
