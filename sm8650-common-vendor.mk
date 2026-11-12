@@ -74,6 +74,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.vendor.onebinary.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.onebinary.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
+    vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.vendor.uwb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.uwb.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/init.vendor.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.wlan.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
@@ -102,6 +103,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.samsung.hardware.thermal-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.thermal-default.rc \
+    vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.samsung.hardware.uwb@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.uwb@1.0-service.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.qcom.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/init/wifi_qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_qcom.rc \
@@ -109,7 +111,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    vendor/samsung/sm8650-common/proprietary/vendor/etc/libuwb-countrycode.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-countrycode.conf \
+    vendor/samsung/sm8650-common/proprietary/vendor/etc/libuwb-feature.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-feature.conf \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/libuwb-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-nxp.conf \
+    vendor/samsung/sm8650-common/proprietary/vendor/etc/libuwb-uci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libuwb-uci.conf \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/locale/plmn_delta_eng.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_eng.bin \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/locale/plmn_delta_zh-rCN.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rCN.bin \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/locale/plmn_delta_zh-rHK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rHK.bin \
@@ -194,6 +199,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/str/str_preference_data.dat:$(TARGET_COPY_OUT_VENDOR)/etc/str/str_preference_data.dat \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
+    vendor/samsung/sm8650-common/proprietary/vendor/etc/uwb_key:$(TARGET_COPY_OUT_VENDOR)/etc/uwb_key \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/samsung/sm8650-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
@@ -975,6 +981,7 @@ PRODUCT_PACKAGES += \
     unihal_main \
     unihal_scenario \
     unihal_uniplugin@1.0 \
+    uwb_uci.hal \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -1058,6 +1065,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.samsung.hardware.camera.provider-service.xml \
     vendor.samsung.hardware.thermal-default.xml \
+    vendor.samsung.hardware.uwb@1.0-service.xml \
     ATFWD-daemon \
     adpl \
     adsprpcd \
@@ -1084,6 +1092,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2@1.0-service \
     vendor.samsung.hardware.camera.provider-service_64 \
     vendor.samsung.hardware.thermal-service \
+    vendor.samsung.hardware.uwb@1.0-service \
     init.kernel.post_boot-pineapple \
     init.kernel.post_boot \
     init.qcom.class_core \
