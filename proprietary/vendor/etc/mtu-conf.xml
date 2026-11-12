@@ -64,6 +64,8 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="26201" mtu="1340" profile="2"/>
     <mtuTableEntry numeric="26201" mtu="1280" rat="4"/>
     <mtuTableEntry numeric="26206" mtu="1280" rat="4"/>
+    <mtuTableEntry numeric="90140" mtu="1340" profile="2"/>
+    <mtuTableEntry numeric="90140" mtu="1280" rat="4"/>
 
 <!-- DT Austria -->
     <mtuTableEntry numeric="23203" mtu="1280" rat="4"/>
@@ -471,6 +473,8 @@ mtuTableEntry attributes:
 <!-- Verizon (Default : 1428) -->
     <mtuTableEntry numeric="311480" mtu="1428"/>
     <mtuTableEntry numeric="311270" mtu="1428"/>
+    <mtuTableEntry numeric="310590" mtu="1428"/>
+    <mtuTableEntry numeric="310599" mtu="1428"/>
 
 <!-- Claro Puerto Rico -->
     <mtuTableEntry numeric="330110" mtu="1300" proto="1"/>
@@ -602,6 +606,7 @@ mtuTableEntry attributes:
     <mtuTableEntry numeric="43408" mtu="1280" rat="4"/>
 
 <!--  JPN SBM -->
+    <mtuTableEntry numeric="44020" mtu="1300" profile="2"/>
     <mtuTableEntry numeric="44020" mtu="1358"/>
 
 <!-- JPN KDDI -->
