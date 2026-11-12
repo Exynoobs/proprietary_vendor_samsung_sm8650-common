@@ -16953,6 +16953,41 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "liboemcrypto",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liboemcrypto.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libQSEEComAPI",
+                "libcpion",
+                "libminkdescriptor",
+                "libcutils",
+                "libtrustedapploader",
+                "vendor.qti.hardware.display.config-V7-ndk",
+                "libpower",
+                "libcrypto",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libopencv",
     owner: "samsung",
     strip: {
@@ -25874,6 +25909,14 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     system_ext_specific: true,
+}
+
+prebuilt_apex {
+    name: "com.google.android.widevine.nonupdatable",
+    owner: "samsung",
+    src: "proprietary/vendor/apex/com.google.android.widevine.nonupdatable.apex",
+    filename: "com.google.android.widevine.nonupdatable.apex",
+    soc_specific: true,
 }
 
 android_app_import {

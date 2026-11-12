@@ -729,6 +729,7 @@ PRODUCT_PACKAGES += \
     libnicm \
     libnicm_dsi \
     libnicm_utils \
+    liboemcrypto \
     libopencv \
     libopencv3a \
     libopestriping \
@@ -1037,6 +1038,7 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libhme_dsp_skel_so \
     libmmosal \
     libmmparser_lite \
+    com.google.android.widevine.nonupdatable \
     TimeService \
     EuiccGoogle \
     uimservicelibrary \
