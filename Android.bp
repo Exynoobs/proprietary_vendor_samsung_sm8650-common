@@ -26023,15 +26023,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "sec_c2_manifest_default0_1_2.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_2.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "secaudiohalaidl_manifest.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml",
@@ -26638,46 +26629,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "samsung.software.media.c2@1.0-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/samsung.software.media.c2@1.0-service",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libcodec2",
-                "libutils",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "libcodec2_hidl@1.0",
-                "libcodec2_hidl@1.1",
-                "libcodec2_hidl@1.2",
-                "libcodec2_vndk",
-                "libhidlbase",
-                "libavservices_minijail",
-                "libbinder",
-                "libSecC2ComponentStore",
                 "libc++",
                 "libc",
                 "libm",
